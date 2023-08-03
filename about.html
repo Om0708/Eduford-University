@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/8a9b4eb694.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!----------About Us Content--------->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We have a dedicated staff team</h1>
+            <p>We have an extremely dedicated and overly qualified staff team that will impose a1 learning on the student and cater to any of the students needs. Our staff team is motivated, resilient, hard working and respectful, we are certain that they will pass down those qualities to their students.</p>
+            <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Eduford Educational University<br>founded in 1966 by W. Vincent.</p>
+    <div class="icons">
+        <a href="https://twitter.com/OmRaj07082004" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/raj.om_07/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/om-raj-04b877219/" class="fa fa-linkedin"></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Om Raj</p>
+</section>
+
+
+<!--------------JavaScript for Toggle Menu------------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
